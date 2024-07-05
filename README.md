@@ -1,8 +1,10 @@
 # Fantasy Premier league team optimisation
 
-Attempt to use some sort of AI to generate the optimal team, along with transfer and chip strategy eventually. Data from https://github.com/vaastav/Fantasy-Premier-League/.
+This is an attempt to optimise my fantasy football squad selection, picking an initial team and subsequent transfers. I've used data from https://github.com/vaastav/Fantasy-Premier-League/ which includes an 'xP' field, which isn't exactly what's required but is a good enough placeholder until the season starts with more accurate player predictions.
 
 Player points prediction is probably the most technical element of a task like this. It would involve not only gathering the most common data but also searching for alternative data that could improve accuracy, such as betting odds for various markets or even something as stupid as the tweets of the player may improve accuracy. There are a number of available models currently out there, put together by people who have thought a lot more about the problem than I have, so initially this project is purely an optimisation problem based on the predicted points and any other factors useful for creating a team.
+
+The optimisation is carried out using `pulp`. I'd considered converting the problem into `pytorch` to crunch the numbers on a GPU, but it's only taking 5 seconds or so to run over a CPU for 6 gameweeks which is fast enough for now.
 
 ### Single gameweek optimisation
 
