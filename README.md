@@ -30,7 +30,7 @@ Here's the optimised output for the first gameweek of the 2023-24 season, based 
 
 ### Multi gameweek optimisation
 
-Below shows an example of the optimisation for the first 6 gameweeks of the 2023-24 season, which has a total expected points of 517.75. The xP is 45.4 for the first gameweek, less than the 47.1 as in the single week optimised team above. This is obviously as expected due to more consideration being made for subs that we may actually find benefit in using in order to not spend points on additional transfers.
+Below shows an example of the optimisation for the first 6 gameweeks of the 2023-24 season, which has a total expected points of 518. The xP is 45.4 for the first gameweek, less than the 47.1 as in the single week optimised team above. This is obviously as expected due to more consideration being made for subs that we may actually find benefit in using in order to not spend points on additional transfers.
 
 #### First Gameweek Team
 
@@ -52,7 +52,7 @@ Below shows an example of the optimisation for the first 6 gameweeks of the 2023
 | Alphonse Areola       | GK    | West Ham    |      40 |  1   |        0 |         0 |             0 |
 | Bryan Mbeumo          | MID   | Brentford   |      65 |  2.3 |        0 |         0 |             0 |
 
-#### Subsequent Transfers
+#### Transfers
 
 |   Gameweek | Transfers In         | Transfers Out    |
 |-----------:|:---------------------|:-----------------|
@@ -61,3 +61,142 @@ Below shows an example of the optimisation for the first 6 gameweeks of the 2023
 |          4 | Darwin Núñez Ribeiro | Yoane Wissa      |
 |          5 | Pedro Lomba Neto     | Bryan Mbeumo     |
 |          6 | Anthony Gordon       | Solly March      |
+
+Optimising based on the actual points the players scored leads the model to make far more transfers as the cost of 4 points is more than offset by the foresight of knowing the player will score more than 4 points. The selection over the first 6 gameweeks of the 2023-24 season, based on actual points scored, leads to a total of 695 points (177 more than previous) and takes 7 hits for an additional transfer.
+
+#### Gameweek 1 Picks
+
+| name                 | pos   | team           |   price |   xP |   lineup |   captain |   vicecaptain |
+|:---------------------|:------|:---------------|--------:|-----:|---------:|----------:|--------------:|
+| Raphaël Varane       | DEF   | Man Utd        |      50 |   14 |        1 |         1 |             0 |
+| Tim Ream             | DEF   | Fulham         |      45 |    7 |        1 |         0 |             0 |
+| Cristian Romero      | DEF   | Spurs          |      45 |    7 |        1 |         0 |             0 |
+| Erling Haaland       | FWD   | Man City       |     140 |   13 |        1 |         0 |             1 |
+| Odsonne Edouard      | FWD   | Crystal Palace |      55 |    7 |        1 |         0 |             0 |
+| Bernd Leno           | GK    | Fulham         |      45 |   12 |        1 |         0 |             0 |
+| Rodrigo Hernandez    | MID   | Man City       |      55 |   13 |        1 |         0 |             0 |
+| Solly March          | MID   | Brighton       |      65 |    9 |        1 |         0 |             0 |
+| Jarrod Bowen         | MID   | West Ham       |      70 |    9 |        1 |         0 |             0 |
+| Bryan Mbeumo         | MID   | Brentford      |      65 |    7 |        1 |         0 |             0 |
+| Mohamed Salah        | MID   | Liverpool      |     125 |    5 |        1 |         0 |             0 |
+| Malo Gusto           | DEF   | Chelsea        |      40 |    1 |        0 |         0 |             0 |
+| Matty Cash           | DEF   | Aston Villa    |      45 |   -1 |        0 |         0 |             0 |
+| Julián Álvarez       | FWD   | Man City       |      65 |    5 |        0 |         0 |             0 |
+| Norberto Murara Neto | GK    | Bournemouth    |      45 |    2 |        0 |         0 |             0 |
+
+#### Gameweek 2 Picks
+
+| name                 | pos   | team           |   price |   xP |   lineup |   captain |   vicecaptain |
+|:---------------------|:------|:---------------|--------:|-----:|---------:|----------:|--------------:|
+| Cristian Romero      | DEF   | Spurs          |      45 |    6 |        1 |         0 |             0 |
+| Matty Cash           | DEF   | Aston Villa    |      45 |    6 |        1 |         0 |             0 |
+| Destiny Udogie       | DEF   | Spurs          |      45 |    5 |        1 |         0 |             0 |
+| Julián Álvarez       | FWD   | Man City       |      65 |    7 |        1 |         0 |             0 |
+| Erling Haaland       | FWD   | Man City       |     140 |    2 |        1 |         0 |             0 |
+| Norberto Murara Neto | GK    | Bournemouth    |      45 |   10 |        1 |         0 |             0 |
+| Bryan Mbeumo         | MID   | Brentford      |      65 |   16 |        1 |         1 |             0 |
+| Solly March          | MID   | Brighton       |      65 |   15 |        1 |         0 |             1 |
+| Mohamed Salah        | MID   | Liverpool      |     125 |    5 |        1 |         0 |             0 |
+| Rodrigo Hernandez    | MID   | Man City       |      56 |    3 |        1 |         0 |             0 |
+| Jarrod Bowen         | MID   | West Ham       |      70 |    2 |        1 |         0 |             0 |
+| Malo Gusto           | DEF   | Chelsea        |      40 |    1 |        0 |         0 |             0 |
+| Tim Ream             | DEF   | Fulham         |      45 |   -2 |        0 |         0 |             0 |
+| Odsonne Edouard      | FWD   | Crystal Palace |      55 |    2 |        0 |         0 |             0 |
+| Bernd Leno           | GK    | Fulham         |      45 |    2 |        0 |         0 |             0 |
+
+#### Gameweek 3 Picks
+
+| name                 | pos   | team           |   price |   xP |   lineup |   captain |   vicecaptain |
+|:---------------------|:------|:---------------|--------:|-----:|---------:|----------:|--------------:|
+| Matty Cash           | DEF   | Aston Villa    |      45 |   17 |        1 |         0 |             1 |
+| Malo Gusto           | DEF   | Chelsea        |      40 |   14 |        1 |         0 |             0 |
+| Destiny Udogie       | DEF   | Spurs          |      45 |   12 |        1 |         0 |             0 |
+| Cristian Romero      | DEF   | Spurs          |      45 |    7 |        1 |         0 |             0 |
+| Erling Haaland       | FWD   | Man City       |     140 |    4 |        1 |         0 |             0 |
+| Odsonne Edouard      | FWD   | Crystal Palace |      55 |    2 |        1 |         0 |             0 |
+| Bernd Leno           | GK    | Fulham         |      45 |    5 |        1 |         0 |             0 |
+| Raheem Sterling      | MID   | Chelsea        |      70 |   19 |        1 |         1 |             0 |
+| Jarrod Bowen         | MID   | West Ham       |      70 |   12 |        1 |         0 |             0 |
+| Rodrigo Hernandez    | MID   | Man City       |      56 |   10 |        1 |         0 |             0 |
+| Mohamed Salah        | MID   | Liverpool      |     125 |    5 |        1 |         0 |             0 |
+| Tim Ream             | DEF   | Fulham         |      45 |    0 |        0 |         0 |             0 |
+| Julián Álvarez       | FWD   | Man City       |      66 |    2 |        0 |         0 |             0 |
+| Norberto Murara Neto | GK    | Bournemouth    |      45 |    2 |        0 |         0 |             0 |
+| Bryan Mbeumo         | MID   | Brentford      |      67 |    2 |        0 |         0 |             0 |
+
+#### Gameweek 4 Picks
+
+| name                 | pos   | team           |   price |   xP |   lineup |   captain |   vicecaptain |
+|:---------------------|:------|:---------------|--------:|-----:|---------:|----------:|--------------:|
+| Tim Ream             | DEF   | Fulham         |      45 |    7 |        1 |         0 |             0 |
+| Cristian Romero      | DEF   | Spurs          |      46 |    7 |        1 |         0 |             0 |
+| Destiny Udogie       | DEF   | Spurs          |      46 |    5 |        1 |         0 |             0 |
+| Erling Haaland       | FWD   | Man City       |     140 |   20 |        1 |         0 |             1 |
+| Julián Álvarez       | FWD   | Man City       |      66 |   14 |        1 |         0 |             0 |
+| Odsonne Edouard      | FWD   | Crystal Palace |      55 |   13 |        1 |         0 |             0 |
+| Norberto Murara Neto | GK    | Bournemouth    |      45 |    1 |        1 |         0 |             0 |
+| Son Heung-min        | MID   | Spurs          |      90 |   20 |        1 |         1 |             0 |
+| Bryan Mbeumo         | MID   | Brentford      |      68 |    8 |        1 |         0 |             0 |
+| Mohamed Salah        | MID   | Liverpool      |     125 |    8 |        1 |         0 |             0 |
+| Jarrod Bowen         | MID   | West Ham       |      71 |    7 |        1 |         0 |             0 |
+| Malo Gusto           | DEF   | Chelsea        |      41 |    2 |        0 |         0 |             0 |
+| Matty Cash           | DEF   | Aston Villa    |      46 |   -1 |        0 |         0 |             0 |
+| Bernd Leno           | GK    | Fulham         |      45 |    0 |        0 |         0 |             0 |
+| Rodrigo Hernandez    | MID   | Man City       |      57 |    1 |        0 |         0 |             0 |
+
+#### Gameweek 5 Picks
+
+| name                               | pos   | team           |   price |   xP |   lineup |   captain |   vicecaptain |
+|:-----------------------------------|:------|:---------------|--------:|-----:|---------:|----------:|--------------:|
+| Sven Botman                        | DEF   | Newcastle      |      45 |    9 |        1 |         0 |             0 |
+| Tim Ream                           | DEF   | Fulham         |      45 |    8 |        1 |         0 |             0 |
+| Malo Gusto                         | DEF   | Chelsea        |      42 |    6 |        1 |         0 |             0 |
+| Cristian Romero                    | DEF   | Spurs          |      47 |    2 |        1 |         0 |             0 |
+| Julián Álvarez                     | FWD   | Man City       |      67 |    9 |        1 |         0 |             0 |
+| Odsonne Edouard                    | FWD   | Crystal Palace |      55 |    8 |        1 |         0 |             0 |
+| Erling Haaland                     | FWD   | Man City       |     141 |    6 |        1 |         0 |             0 |
+| Norberto Murara Neto               | GK    | Bournemouth    |      45 |   10 |        1 |         0 |             1 |
+| Bernardo Veiga de Carvalho e Silva | MID   | Man City       |      64 |   13 |        1 |         1 |             0 |
+| Mohamed Salah                      | MID   | Liverpool      |     125 |   10 |        1 |         0 |             0 |
+| Bryan Mbeumo                       | MID   | Brentford      |      68 |    2 |        1 |         0 |             0 |
+| Matty Cash                         | DEF   | Aston Villa    |      47 |    1 |        0 |         0 |             0 |
+| Bernd Leno                         | GK    | Fulham         |      46 |    6 |        0 |         0 |             0 |
+| Son Heung-min                      | MID   | Spurs          |      91 |    2 |        0 |         0 |             0 |
+| Jarrod Bowen                       | MID   | West Ham       |      71 |    2 |        0 |         0 |             0 |
+
+#### Gameweek 6 Picks
+
+| name                            | pos   | team           |   price |   xP |   lineup |   captain |   vicecaptain |
+|:--------------------------------|:------|:---------------|--------:|-----:|---------:|----------:|--------------:|
+| Kieran Trippier                 | DEF   | Newcastle      |      65 |   18 |        1 |         1 |             0 |
+| James Tarkowski                 | DEF   | Everton        |      44 |   14 |        1 |         0 |             0 |
+| Sven Botman                     | DEF   | Newcastle      |      46 |   12 |        1 |         0 |             0 |
+| Jonny Evans                     | DEF   | Man Utd        |      40 |   12 |        1 |         0 |             0 |
+| Carlton Morris                  | FWD   | Luton          |      55 |    9 |        1 |         0 |             0 |
+| Bernd Leno                      | GK    | Fulham         |      46 |   10 |        1 |         0 |             0 |
+| Kaoru Mitoma                    | MID   | Brighton       |      65 |   14 |        1 |         0 |             1 |
+| Son Heung-min                   | MID   | Spurs          |      91 |   14 |        1 |         0 |             0 |
+| Bukayo Saka                     | MID   | Arsenal        |      87 |   13 |        1 |         0 |             0 |
+| Bruno Guimarães Rodriguez Moura | MID   | Newcastle      |      58 |   13 |        1 |         0 |             0 |
+| Mohamed Salah                   | MID   | Liverpool      |     125 |   10 |        1 |         0 |             0 |
+| Malo Gusto                      | DEF   | Chelsea        |      43 |   -2 |        0 |         0 |             0 |
+| Odsonne Edouard                 | FWD   | Crystal Palace |      56 |    2 |        0 |         0 |             0 |
+| Julián Álvarez                  | FWD   | Man City       |      69 |    1 |        0 |         0 |             0 |
+| Norberto Murara Neto            | GK    | Bournemouth    |      45 |    1 |        0 |         0 |             0 |
+
+#### Transfers Summary
+
+|   Gameweek | Transfers In                       | Transfers Out                      |
+|-----------:|:-----------------------------------|:-----------------------------------|
+|          2 | Destiny Udogie                     | Raphaël Varane                     |
+|          3 | Raheem Sterling                    | Solly March                        |
+|          4 | Son Heung-min                      | Raheem Sterling                    |
+|          5 | Bernardo Veiga de Carvalho e Silva | Destiny Udogie                     |
+|          5 | Sven Botman                        | Rodrigo Hernandez                  |
+|          6 | James Tarkowski                    | Bernardo Veiga de Carvalho e Silva |
+|          6 | Kaoru Mitoma                       | Tim Ream                           |
+|          6 | Kieran Trippier                    | Bryan Mbeumo                       |
+|          6 | Bukayo Saka                        | Erling Haaland                     |
+|          6 | Bruno Guimarães Rodriguez Moura    | Cristian Romero                    |
+|          6 | Carlton Morris                     | Jarrod Bowen                       |
+|          6 | Jonny Evans                        | Matty Cash                         |
